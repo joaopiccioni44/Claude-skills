@@ -3,7 +3,9 @@ name: linkedin-360brew
 description: >
   Skill principal de LinkedIn alinhada ao algoritmo 360Brew (2025-2026) e
   calibrada com o Q1 2026 State of the Algorithm Report (397.605 posts
-  analisados). Use sempre que o usuário mencionar LinkedIn, posts, alcance,
+  analisados) e revisada em set/2026 com cruzamento de seis relatórios
+  (escada de cadência, vídeo como alta variância, apêndice de números
+  contestados). Use sempre que o usuário mencionar LinkedIn, posts, alcance,
   impressões, saves, dwell time, thought leadership, personal branding, growth
   ou estratégia geral de conteúdo na plataforma. Esta skill é o núcleo
   conceitual do sistema 360Brew e o roteador para skills satélites mais
@@ -135,7 +137,11 @@ Quando o usuário pedir um post completo, o pipeline natural é: definir pilar e
 
 **Tempo para resultado:** ~90 dias de posting consistente e alinhado para o sistema construir o credibility cluster.
 
-**Frequência ideal:** 1-2 posts de alta qualidade por semana superam posting diário com qualidade média. Posting mais que 1x/dia só compensa se a qualidade se mantém.
+**Frequência: escada de cadência condicionada à qualidade (revisão set/2026).** A Saywhat atribui à mudança de março/2026 um ganho de ~3.1x views por post para quem publica diariamente; fontes independentes medem o oposto (posting diário = -26% de alcance por post e -45% ao longo do tempo por fadiga de conteúdo; experimentos de 90 dias com 6 posts relevantes em 63). A conciliação está no próprio report: os 80% piores posts de um creator médio geram só 11% das impressões. Frequência amplifica quem já tem taxa de acerto alta e dilui quem não tem. Regra operacional:
+- **Base: 2-3 posts densos por semana** (texto longo nas 6 seções, carrossel ou infográfico com argumento próprio).
+- **Subir para 4-5 apenas com formatos leves** que não canibalizem o tempo dos posts densos: infográfico + take curto, repost com comentário próprio de 3-5 linhas, foto de autoridade com uma observação.
+- **Nunca preencher cota.** Post publicado só para manter cadência entra nos 80% que não geram impressões e treina o modelo com sinal fraco sobre quem você é.
+- Posting mais que 1x/dia não tem evidência favorável em nenhuma fonte.
 
 **Primeiros 60 minutos:** Responder comentários logo após publicação gera engagement velocity inicial. **Top 1% creators respondem 255% mais que a média** — esse hábito sozinho já é diferencial.
 
@@ -149,6 +155,8 @@ Quando o usuário pedir um post completo, o pipeline natural é: definir pilar e
 
 **Email > followers no longo prazo:** Followers é métrica da plataforma; email é métrica sua. Detalhes em `linkedin-deplatforming`.
 
+**Tamanho da base não é mais vantagem estrutural:** o Q1 2026 registra queda forte na relevância do número de seguidores versus Q4 2025; contas de ~10k crescem no mesmo ritmo de contas com 100k+. O 360Brew distribui por identidade semântica e sinal de valor por viewer, não pelo grafo de seguidores. Implicação: o custo de errar de nicho é maior que o custo de ter base pequena; a alavanca é consistência temática, não acumulação.
+
 ---
 
 ## Hierarquia de Formatos (Q1 2026)
@@ -157,9 +165,9 @@ Quando o usuário pedir um post completo, o pipeline natural é: definir pilar e
 |---|---|---|
 | Infographics | 29% dos top 1% posts; ~3.0x reach vs text post | Maior categoria viral em 2026; AI-generated infographics dominando |
 | Carousels | ~3.0x reach vs text post | Cada swipe = sinal de engajamento + dwell time |
-| Text + Imagem portrait | Portrait +47% vs landscape (1200x1500px / 4:5) | Padrão sólido para B2B; foto pessoal supera stock |
+| Text + Imagem portrait | Portrait +47% vs landscape (1200x1500px / 4:5) | Padrão sólido para B2B; foto pessoal supera stock. Preferir **foto de autoridade** (palco, evento, tela com dado real, bastidor da operação, reunião com time) a selfie genérica: a imagem precisa carregar evidência de expertise, não só presença |
 | Text post longo | Sweet spot 1.250-3.000 chars | Excelente para thought leadership; sem tipo visual perde scroll-stop |
-| Vídeo horizontal | +18% vs vídeo vertical | LinkedIn é uso no trabalho — vertical desconforta socialmente |
+| Vídeo horizontal | +18% vs vídeo vertical | LinkedIn é uso no trabalho — vertical desconforta socialmente. **Formato de alta variância:** Saywhat mede a maior probabilidade viral entre formatos (2,0%) e crescimento de views (+36% a/a, Dataslayer); van der Blom mede -35,6% de alcance e AuthoredUp -72%. Tratar como aposta, não como formato "que só constrói confiança". Content Creative Fit decide |
 | Polls | 206% mais impressões que média | Awareness, não conversão |
 
 ---
@@ -179,3 +187,22 @@ Quando o usuário pedir um post completo, o pipeline natural é: definir pilar e
 ## Workflow Genérico de Revisão
 
 Para revisão sistemática, ative diretamente `linkedin-post-doctor` — ela traz o sistema de scoring /60 em 6 seções + Algorithm Health Check. Esta skill core foca em estratégia e roteamento.
+
+---
+
+## Apêndice: Fontes e Números Contestados (set/2026)
+
+Os números desta skill vêm majoritariamente do State of the Algorithm Q1 2026 (Saywhat, 397.605 posts). A Saywhat analisa usuários da própria ferramenta, o que introduz viés de seleção. Antes de tratar qualquer infográfico viral como "novo algoritmo", verificar se ele é apenas uma releitura desse mesmo report (o "Old vs New LinkedIn" do Will McTighe, set/2026, é exatamente isso: os 11 pontos batem um a um com o Q1 2026).
+
+**Consenso entre os seis relatórios disponíveis (van der Blom 600k+ posts, Trust Insights, Saywhat, AuthoredUp 3M+ posts, Ocean Labs, Socialinsider 1M posts):** consistência temática, saves > likes, detecção de texto genérico de IA, qualidade de comentário, supressão de engagement bait, hashtags irrelevantes. Estas são as regras de carga; mudam devagar.
+
+**Números que divergem por amostra (usar como direção, não como constante):**
+
+| Dimensão | Saywhat | van der Blom | AuthoredUp / outros |
+|---|---|---|---|
+| Links externos | 1-3 links +43%; >3 links +441% | 1 link = -18,8% reach mediano | Link único performa pior; múltiplos melhor. Dataslayer: -60% |
+| Tamanho | 1.250-3.000 chars; 14+ parágrafos +71% | 900-1.200 chars | 800-1.000 chars |
+| Vídeo | Maior probabilidade viral (2,0%) | -35,6% reach | -72% (queda mais íngreme) |
+| Frequência | Diário = 3.1x views por post | Contra posting diário | Goodman: diário = -26% por post |
+
+O "+227% para texto longo e humano" que circula em infográficos não aparece em nenhuma fonte pública verificável; o recorte confirmado é o de 14+ parágrafos (+71%) e o pico em >2.500 caracteres.

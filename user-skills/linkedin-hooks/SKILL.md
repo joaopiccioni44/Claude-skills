@@ -106,6 +106,8 @@ Cada padrão lista: *fórmula esquemática*, *exemplo validado*, *quando funcion
 
 **Armadilha:** dado sem virada interpretativa é apenas notícia. *"VALE3 caiu 4% hoje."* não é hook — é manchete. Adicione a leitura: *"VALE3 caiu 4% hoje. O preço de minério já vinha sinalizando isso há duas semanas."*
 
+**Subtipo 4b: Receipt (dado próprio).** Variante em que o número vem da operação do autor, não do mercado: *"Treinamos 54 versões do prompt do Tom antes da primeira que passou no teste."* O receipt combina o padrão 4 com autoridade de primeira mão (padrão 5) e é o hook que a Saywhat classifica como "authority hook", superando pattern interrupts desde meados de 2025. Regra: o número precisa ser verificável pelo corpo do post (print, resultado, série histórica). Receipt sem prova no corpo vira FOMO Insider mal executado.
+
 ### 5. Insight Pessoal
 
 **Fórmula:** primeira pessoa com revelação acumulada por experiência específica.

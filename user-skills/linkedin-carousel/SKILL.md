@@ -179,7 +179,7 @@ O texto **não pode duplicar** o conteúdo do carrossel. Ele complementa: dá co
 
 **Cores e fonts consistentes.** Carrossel é vitrine de marca visual. Manter paleta + 1-2 fontes consistentes ao longo do carrossel (e idealmente entre carrosseis do mesmo autor). Conexão com `theme-factory` se quiser sistematizar.
 
-**Não force frequência.** Carrossel custa tempo (texto + visual + renderização). Melhor 1 carrossel forte por mês do que 4 medíocres. O Q1 2026 confirma: 1-2 posts excelentes/semana superam posting diário com qualidade média.
+**Não force frequência.** Carrossel custa tempo (texto + visual + renderização). Melhor 1 carrossel forte por mês do que 4 medíocres. Vale a escada de cadência da `linkedin-360brew`: 2-3 posts densos por semana como base, e carrossel é o mais caro deles.
 
 **Reaproveitar inteligente.** Um carrossel forte vira newsletter expandida em Capital Pulse, vira post Instagram (mesmo design adaptado para 1080x1080 ou 1080x1350), vira thread no X. *Para profundidade nessa adaptação, ativar `linkedin-repurposing` (quando criada).*
 
