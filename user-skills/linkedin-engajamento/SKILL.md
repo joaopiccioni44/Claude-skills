@@ -7,8 +7,10 @@ description: >
   comentar em posts de outras pessoas, montar plano de engajamento, "como
   comentar de forma estratégica", "como aumentar reach via comentários",
   "preciso primar o algoritmo antes de mudar de tema", priming, ou mencionar
-  comment impressions. Codifica a regra 30/30/30/10 de alocação de comentários
-  e o protocolo de 15 dias de priming pré-publicação. Dado base do Q1 2026:
+  comment impressions. Codifica a regra 30/30/30/10 de alocação de comentários,
+  o protocolo de 15 dias de priming pré-publicação, o scoring de oportunidade
+  de comentário (0 a 12), a triagem da própria caixa em 5 baldes e a sessão
+  diária de 15 minutos (inbox antes de outbound). Dado base do Q1 2026:
   top 1% creators respondem 255% mais comentários que a média (134/semana
   vs 38). Engajamento bem feito é o multiplicador mais subestimado de reach.
 ---
@@ -157,6 +159,78 @@ Nem todos os comentários valem igual. Comentário de exec do ICP em post seu va
 
 ---
 
+## Mecânica Operacional: Scoring, Triagem e Sessão Diária
+
+A seção anterior define estratégia (onde investir o tempo). Esta define a mecânica de execução: como escolher em quais posts comentar hoje, como triar a própria caixa e como fechar tudo em uma sessão curta. Os frameworks abaixo foram absorvidos da suíte Taplio (set/2026), reescritos sem dependência de ferramenta e calibrados para o contexto do João.
+
+### Scoring de oportunidade de comentário (0 a 12)
+
+Cada post candidato recebe nota de 0 a 3 em quatro filtros. Vale comentar a partir de 8/12.
+
+| Filtro | 3 | 2 | 1 | 0 |
+|---|---|---|---|---|
+| **Recência** | < 4h | < 12h | < 48h | mais antigo (exceto thread ainda em movimento) |
+| **Overlap de audiência** | audiência do autor = ICP do João | adjacente | vagamente relacionada | sem relação |
+| **Velocidade de engajamento** | comentários/hora altos e subindo | moderados | muitos likes e quase nenhum comentário (audiência passiva) | parado |
+| **Match de tema** | tema em que o João tem ângulo específico e credível | tema geral do nicho | tangencial | fora |
+
+Regras derivadas do scoring: a janela de ouro é a primeira hora após o post cair; thread com 100+ comentários e autor ausente está saturada (o comentário não será visto pelo autor nem pinado); cinco picks fortes valem mais que dez de preenchimento; nunca o mesmo autor duas vezes no mesmo dia.
+
+### Ângulo de cada comentário
+
+Ao escolher um post, definir antes de escrever qual dos cinco ângulos será usado. Os templates da seção "Como Escrever Comentários Que São Notados" cobrem a execução.
+
+| Ângulo | O que faz |
+|---|---|
+| **Adiciona** | Traz o dado, o contexto ou a dimensão que o post deixou de fora |
+| **Diverge** | Contesta um ponto específico, com argumento e respeito |
+| **Caso** | Micro-experiência de 2 linhas que espelha ou contraria o post |
+| **Framework** | Modelo mental ou checklist que o leitor consegue usar |
+| **Pergunta** | A pergunta que empurra a conversa adiante (mostra leitura cuidadosa) |
+
+Antes de escrever, ler a thread existente nos 3 a 5 picks principais: identificar quais ângulos já foram tomados e se o autor responde aos comentadores. Comentário de 80 a 400 caracteres, teto rígido de 1.250. Sem link, sem pitch, no máximo uma pergunta. Nunca abrir com "ótimo post" ou equivalente.
+
+### Triagem da própria caixa (5 baldes)
+
+Todo comentário recebido nos próprios posts cai em um de cinco baldes. A triagem antecede a resposta e decide o tipo de reply.
+
+| Balde | Sinal | Resposta |
+|---|---|---|
+| **Pergunta** | Pede esclarecimento, dado ou "como você faz" | Responder de fato, com o dado. É onde a comunidade se forma |
+| **Pushback** | Discorda ou contesta | Uma resposta factual e respeitosa. Troll recebe no máximo uma resposta factual e nenhuma discussão além disso |
+| **Sinal de lead** | Descreve a própria situação, pergunta sobre o método, menciona a própria empresa ou fundo | Responder com substância e marcar para o funil de `linkedin-networking` |
+| **Elogio** | Concorda, elogia, agradece | Reply curto que estende com uma pergunta ou um dado extra. Nunca um "obrigado" seco |
+| **Spam** | Bot, autopromoção, engagement bait | Não responder |
+
+Ordem de prioridade: sinal de lead, pergunta, pushback, elogio. Na primeira hora após publicar, responder primeiro quem tem maior autoridade no nicho (sinal mais forte para o 360Brew, ver seção "Engagement de Execs ICP > Volume").
+
+### A sessão de 15 minutos (inbox antes de outbound)
+
+Formato compacto para dias em que os 20 a 30 minutos do workflow completo não cabem. A regra central: **caixa própria antes de comentários em posts alheios**. Comentário não respondido esfria; oportunidade de outbound se renova todo dia.
+
+| Etapa | Tempo | O que acontece |
+|---|---|---|
+| **0. Baseline** | 30s | Seguidores, visitas de perfil de hoje, o que ficou pendente da sessão anterior |
+| **1. Inbox** | 5 min | Todo comentário sem resposta dos últimos 3 dias. Triar nos 5 baldes, redigir reply para cada um exceto spam |
+| **2. Outbound** | 7 min | Candidatos do mapa de perfis (30/30/30/10). Pontuar nos 4 filtros, ficar com os 5 melhores respeitando mix de 3 creators maiores/ICP e 2 pares. Um comentário por pick com ângulo definido |
+| **3. Revisão** | 2 min | Passar tudo pelo filtro `linkedin-voice-joao`. Cortar o que soa template |
+| **4. Publicar** | 1 min | Publicar replies e comentários. Espaçar ao longo de uma ou duas horas (limite horário de comentários da plataforma) |
+| **5. Fechar** | 30s | Sinais de lead a acompanhar e a única coisa a fazer diferente amanhã |
+
+Teto diário de outbound: 5 comentários. Dia quieto (poucos posts relevantes, caixa vazia): dizer isso e encerrar cedo. Forçar comentário para bater cota produz exatamente o engagement bait que o 360Brew penaliza.
+
+### Sinais de que a mecânica está funcionando (e os três alertas de vaidade)
+
+A auditoria semanal (sextas) ganha três testes de contraste. Cada um separa métrica que entretém de métrica que converte:
+
+- **Impressões sem visitas de perfil**: o conteúdo entretém e não converte. Falta de hook de autoridade ou de CTA que nomeie o setor.
+- **Engajamento sem crescimento de seguidores**: a mesma audiência reagindo. Não há reach novo; revisar o 30/30/30/10 (provavelmente preso nos 10% de amigos).
+- **Visitas de perfil sem DMs ou conexões**: o perfil não converte quem chega. Problema de headline e About, ver `linkedin-profile`.
+
+Queda de reach em uma semana não justifica pânico. Procurar, nesta ordem: queda de cadência, mudança de ângulo temático, par ocupando o nicho, mudança de algoritmo. Correlação entre comentários feitos e visitas de perfil é sinal útil; atribuição direta não existe.
+
+---
+
 ## Conexão Com Outras Skills
 
 | Job | Skill ativa |
@@ -164,6 +238,7 @@ Nem todos os comentários valem igual. Comentário de exec do ICP em post seu va
 | Calibração de voz nos comentários | `linkedin-voice-joao` (mesmo filtro que para posts) |
 | Diagnóstico de comentários do próprio post | `linkedin-post-doctor` (avalia se a discussão amplificou ou não o post original) |
 | Tracker de hooks queimados | `hooks-utilizados.md` (não confundir com tracker de comentários) |
+| Sinal de lead detectado na triagem: pedido de conexão e primeira DM | `linkedin-networking` (scoring de warm lead + templates) |
 | Construção de lista de email atrás dos relacionamentos via DM | `linkedin-deplatforming` (quando criada) |
 | Sincronizar engajamento com mix de posts | `linkedin-mix` (auditoria mensal inclui revisar 30/30/30/10) |
 
