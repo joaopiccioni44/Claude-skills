@@ -33,6 +33,7 @@ LINKEDIN_SKILLS=(
   "linkedin-carousel"
   "linkedin-newsletter-bridge"
   "linkedin-engajamento"
+  "linkedin-networking"
 )
 
 echo -e "${BLUE}=== Instalação da suíte LinkedIn ===${NC}"

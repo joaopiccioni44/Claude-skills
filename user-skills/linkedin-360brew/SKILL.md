@@ -11,7 +11,8 @@ description: >
   conceitual do sistema 360Brew e o roteador para skills satélites mais
   profundas (linkedin-hooks, linkedin-post-doctor, linkedin-carousel,
   linkedin-newsletter-bridge, linkedin-voice-joao, linkedin-profile,
-  linkedin-templates, linkedin-mix, linkedin-engajamento, linkedin-deplatforming,
+  linkedin-templates, linkedin-mix, linkedin-engajamento, linkedin-networking,
+  linkedin-deplatforming,
   linkedin-repurposing, linkedin-frameworks-ip). Carregue as satélites quando
   o trabalho exigir profundidade específica.
 ---
